@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS PWA -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="AiA">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <title>AiA</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="splash.css">
+
+  <!-- Scripts ( app scripts → Flutter bootstrap) -->
+  <script src="service_worker_check.js"></script>
+  <!-- ARCaptcha widget script (required for captcha on web) -->
+  <!-- <script src="https://widget.arcaptcha.ir/1/api.js" async defer></script> -->
+
+  <!-- Status bar color script -->
+  <script src="scripts/status-bar-color.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Splash: shown until Flutter first frame (splash.js hides it) -->
+  <div id="splash">
+    <div class="splash-content">
+      <div class="splash-logo-wrap">
+        <img class="splash-logo" src="aia_logo.svg" alt="AIA" />
+      </div>
+      <div class="splash-loader-wrap">
+        <div class="splash-loader" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="splash.js"></script>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+
+</html>

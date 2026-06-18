@@ -1,0 +1,113 @@
+/* -----------------------------------------------------------------------------
+   Splash screen styles (shown before Flutter engine loads)
+   ----------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+#splash {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  color: #e8e8e8;
+  z-index: 9999;
+  transition: opacity 0.4s ease-out;
+}
+
+#splash.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.splash-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+/* Logo: absolutely centered in the full splash area */
+.splash-logo-wrap {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.splash-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  flex-shrink: 0;
+  animation: splash-heartbeat 1.2s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+  .splash-logo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.splash-loader-wrap {
+  padding-bottom: 2.5rem;
+  flex-shrink: 0;
+}
+
+.splash-loader {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-top-color: #0E53D9;
+  border-radius: 50%;
+  animation: splash-spin 0.9s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .splash-loader {
+    width: 28px;
+    height: 28px;
+    border-width: 2.5px;
+  }
+
+  .splash-loader-wrap {
+    padding-bottom: 3rem;
+  }
+}
+
+@keyframes splash-heartbeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes splash-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
