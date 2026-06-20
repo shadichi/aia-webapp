@@ -266,7 +266,7 @@ v=r.a.c
 u=y.x
 t=v.b
 s=v.w
-v=v.f?A.f9("this_will_delete_team_description",A.u(["team_name",t,p,A.bq(G.eQ(B.d.k(s),","))],u,u)):A.f9("this_will_deactivate_team_description",A.u(["team_name",t,p,A.bq(G.eQ(B.d.k(s),","))],u,u))
+v=v.f?A.f9("this_will_delete_team_description",A.u(["team_name",t,p,A.bn(G.eQ(B.d.k(s),","))],u,u)):A.f9("this_will_deactivate_team_description",A.u(["team_name",t,p,A.bn(G.eQ(B.d.k(s),","))],u,u))
 A.ng(new A.lo(o,!0,A.iP(q,q,q,q,E.c0V(v,x,r.a.c.f?A.z("delete"):A.z("deactivate"),w),q,q,q),q,new C.bRe(r)))},
 aMi(){var x,w,v,u,t,s=this,r=null
 if(!s.a.c.d){x=A.b([],y.r)
@@ -301,7 +301,7 @@ x.toString
 w=A.z("activate_team")
 v=t.a.c
 u=y.x
-A.ng(new A.lo(x,!0,A.iP(s,s,s,s,E.c0V(A.f9("this_will_activate_team_description",A.u(["team_name",v.b,"team_members_count",A.bq(G.eQ(B.d.k(v.w),","))],u,u)),w,A.z("activate"),t.gb2u()),s,s,s),s,s))
+A.ng(new A.lo(x,!0,A.iP(s,s,s,s,E.c0V(A.f9("this_will_activate_team_description",A.u(["team_name",v.b,"team_members_count",A.bn(G.eQ(B.d.k(v.w),","))],u,u)),w,A.z("activate"),t.gb2u()),s,s,s),s,s))
 break}},
 C(d){var x,w,v,u,t,s,r,q,p,o,n,m,l,k,j,i,h,g=this,f=null
 if(!g.a.c.d){x=A.e(d).ax
@@ -358,7 +358,7 @@ l=A.e(d).ax
 k=l.d
 l=(k==null?l.b:k).b2(0.6)
 k=B.t.v(0,2)
-j=A.bq(G.eQ(B.d.k(g.a.c.w),","))
+j=A.bn(G.eQ(B.d.k(g.a.c.w),","))
 i=A.z("member")
 h=A.e(d).ok.x
 h=h==null?f:h.X(A.e(d).ax.b)
@@ -484,4 +484,4 @@ var y={l:A.U("lF"),w:A.U("a4<~>"),r:A.U("B<rl<t2>>"),u:A.U("B<f>"),n:A.U("rj"),x
 D.b0d=new C.t2(0,"edit")
 D.b0e=new C.t2(1,"delete")
 D.b0f=new C.t2(2,"activate")})()};
-(a=>{a["JVMZyVbLFLu+aB8V7/6paishehs="]=a.current})($__dart_deferred_initializers__);
+(a=>{a["5Tn4bRo9ps0tqw1cP75DgCz+cu8="]=a.current})($__dart_deferred_initializers__);
